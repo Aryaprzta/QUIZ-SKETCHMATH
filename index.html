@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Jangka Sorong & Kuis Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mengenal Jangka Sorong dan Komponennya</h1>
+            <p>Modul Pembelajaran Dasar-Dasar Teknik Mesin</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>1. Pengantar & Fungsi Utama</h2>
+            <p>Pengukuran presisi merupakan fondasi utama dalam teknik mesin untuk menjamin kualitas produk dan menghindari cacat produksi. Jangka sorong adalah alat ukur presisi vital yang memiliki ketelitian hingga <strong>0,02 mm</strong>.</p>
+            <p>Alat ini memiliki kemampuan untuk mengukur tiga dimensi utama:</p>
+            <ul>
+                <li><strong>Diameter Luar (Outer Diameter):</strong> Mengukur diameter luar benda kerja atau ketebalan material.</li>
+                <li><strong>Diameter Dalam (Inner Diameter):</strong> Mengukur diameter dalam lubang, celah, atau rongga.</li>
+                <li><strong>Kedalaman (Depth):</strong> Mengukur kedalaman lubang, celah, atau alur benda kerja.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>2. Komponen Utama & Fungsi</h2>
+            <div class="grid">
+                <div class="component-item">
+                    <h3>Rahang Luar (Outer Jaws)</h3>
+                    <p>Mengukur diameter luar dan ketebalan benda kerja dengan presisi tinggi.</p>
+                </div>
+                <div class="component-item">
+                    <h3>Rahang Dalam (Inner Jaws)</h3>
+                    <p>Mengukur diameter dalam lubang atau rongga.</p>
+                </div>
+                <div class="component-item">
+                    <h3>Batang Kedalaman (Depth Rod)</h3>
+                    <p>Mengukur kedalaman lubang atau celah.</p>
+                </div>
+                <div class="component-item">
+                    <h3>Baut Pengunci (Locking Screw)</h3>
+                    <p>Mengunci posisi rahang geser agar hasil pengukuran tidak berubah saat pembacaan skala.</p>
+                </div>
+                <div class="component-item">
+                    <h3>Skala Pengukuran</h3>
+                    <p>Terdiri dari <strong>Skala Utama (Main Scale)</strong> dalam satuan milimeter dan <strong>Skala Nonius (Vernier Scale)</strong> untuk pembacaan presisi tambahan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>3. Rumus Pembacaan Skala</h2>
+            <div class="formula-box">
+                <p class="formula">H = SU + (SN × K)</p>
+            </div>
+            <ul>
+                <li><strong>H:</strong> Hasil Pengukuran Akhir</li>
+                <li><strong>SU:</strong> Skala Utama (Nilai di sebelah kiri garis nol skala nonius)</li>
+                <li><strong>SN:</strong> Nomor garis nonius yang berimpit/sejajar lurus dengan garis skala utama</li>
+                <li><strong>K:</strong> Ketelitian Alat (misal: 0,02 mm atau 0,05 mm)</li>
+            </ul>
+            <p><strong>Contoh Kasus:</strong> Jika SU = 24 mm, Garis Nonius berimpit = 7, dan Ketelitian = 0,05 mm.<br> Maka: <em>H = 24 + (7 × 0,05) = 24,35 mm</em>.</p>
+        </section>
+
+        <section class="card quiz-section">
+            <h2>4. Uji Kemampuan (Kuis Pilihan Ganda)</h2>
+            <hr>
+            <div id="quiz-container">
+                <div id="question-box">
+                    <h3 id="question-text">Memuat pertanyaan...</h3>
+                    <div id="options-container" class="options-list"></div>
+                </div>
+                <div id="feedback-box" class="feedback hidden"></div>
+                <button id="next-btn" class="btn hidden">Pertanyaan Selanjutnya</button>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h3>Kuis Selesai!</h3>
+                <p id="score-text"></p>
+                <button id="restart-btn" class="btn">Ulangi Kuis</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 S1 Pendidikan Teknik Mesin - Universitas Negeri Surabaya</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
